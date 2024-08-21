@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+:root {
+    --bg-color: #F4F4F9; 
+    --container-bg: #EDEDED;
+    --accent-color: #B9B9C3; 
+    --primary-color: #C5C6D0; 
+    --button-color: #A4A5B3; 
+    --text-color: #333; 
+    --icon-color: #777; 
+    --input-bg: #FFFFFF; 
+    --input-border: #D1D1D1;
+    --link-color: #5C5F73; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+ 
+.container {
+    background-color: var(--container-bg);
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+h1 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn a {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--icon-color);
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.btn a:hover {
+    color: var(--primary-color);
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+a {
+    color: var(--link-color);
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+.sign-btn input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign-btn input[type="button"]:hover {
+    background-color: var(--primary-color);
+}
